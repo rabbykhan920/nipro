@@ -1,0 +1,136 @@
+ <!-- Trending Item -->
+         <section class="md:my-16 my-8">
+             <!-- heading  -->
+             <div class="text-center md:mb-20 mb-10">
+             
+               <h2 class="lg:text-4xl md:text-2xl text-xl md:mt-6 mt-3">Trending Item</h2>
+               <hr class="border-[#F7941D] border-2 w-16 sm:w-32 md:w-24 lg:w-36 mx-auto my-4"> 
+
+              <div class="flex-wrap">
+                <a href="#" class="btn md:mr-4 bg-transparent border-none shadow-none hover:bg-[#F7941D] hover:text-white text-lg">All</a>
+                <a href="#" class="btn md:mr-4 bg-transparent border-none shadow-none hover:bg-[#F7941D] hover:text-white text-lg">APP DESIGN</a>
+                <a href="#" class="btn md:mr-4 bg-transparent border-none shadow-none hover:bg-[#F7941D] hover:text-white text-lg">WEB DESIGN</a>
+                <a href="#" class="btn md:mr-4 bg-transparent border-none shadow-none hover:bg-[#F7941D] hover:text-white text-lg">UI DESIGN</a>
+                <a href="#" class="btn md:mr-4 bg-transparent border-none shadow-none hover:bg-[#F7941D] hover:text-white text-lg">PHOTOSHOP</a>
+              </div>
+          </div>
+          <!-- heading  -->
+           <!-- item -->
+           <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:gap-8 gap-4">
+             <!-- card-1 -->
+             <div class="card border rounded-none hover:bg-[#E5E5E5]">
+              <figure class="px-6 rounded-none">
+                <img
+                  src="https://joysultan.github.io/nipro/images/img-1.jpg"
+                  alt="Shoes"
+                  class="rounded-none" />
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 class="card-title uppercase">product name</h2>
+               
+              </div>
+            </div>
+             <!-- card-1 -->
+             <!-- card-2 -->
+             <div class="card border rounded-none hover:bg-[#E5E5E5]">
+              <figure class="px-6 rounded-none">
+                <img
+                  src="https://joysultan.github.io/nipro/images/img-2.jpg"
+                  alt="Shoes"
+                  class="rounded-none" />
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 class="card-title uppercase">product name</h2>
+               
+              </div>
+            </div>
+             <!-- card-2 -->
+             <!-- card-3 -->
+             <div class="card border rounded-none hover:bg-[#E5E5E5]">
+              <figure class="px-6 rounded-none">
+                <img
+                  src="https://joysultan.github.io/nipro/images/img-3.jpg"
+                  alt="Shoes"
+                  class="rounded-none" />
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 class="card-title uppercase">product name</h2>
+               
+              </div>
+            </div>
+             <!-- card-3 -->
+             <!-- card-4 -->
+             <div class="card border rounded-none hover:bg-[#E5E5E5]">
+              <figure class="px-6 rounded-none">
+                <img
+                  src="https://joysultan.github.io/nipro/images/img-4.jpg"
+                  alt="Shoes"
+                  class="rounded-none" />
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 class="card-title uppercase">product name</h2>
+               
+              </div>
+            </div>
+             <!-- card-4 -->
+             <!-- card-5 -->
+             <div class="card border rounded-none hover:bg-[#E5E5E5]">
+              <figure class="px-6 rounded-none">
+                <img
+                  src="https://joysultan.github.io/nipro/images/img-5.jpg"
+                  alt="Shoes"
+                  class="rounded-none" />
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 class="card-title uppercase">product name</h2>
+               
+              </div>
+            </div>
+             <!-- card-5 -->
+             <!-- card-6 -->
+             <div class="card border rounded-none hover:bg-[#E5E5E5]">
+              <figure class="px-6 rounded-none">
+                <img
+                  src="https://joysultan.github.io/nipro/images/img-6.jpg"
+                  alt="Shoes"
+                  class="rounded-none" />
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 class="card-title uppercase">product name</h2>
+               
+              </div>
+            </div>
+             <!-- card-6 -->
+             <!-- card-7 -->
+             <div class="card border rounded-none hover:bg-[#E5E5E5]">
+              <figure class="px-6 rounded-none">
+                <img
+                  src="https://joysultan.github.io/nipro/images/product_img_5.jpg"
+                  alt="Shoes"
+                  class="rounded-none" />
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 class="card-title uppercase">product name</h2>
+               
+              </div>
+            </div>
+             <!-- card-7 -->
+             <!-- card-8 -->
+             <div class="card border rounded-none hover:bg-[#E5E5E5]">
+              <figure class="px-6 rounded-none">
+                <img
+                  src="https://joysultan.github.io/nipro/images/product_img_2.jpg"
+                  alt="Shoes"
+                  class="rounded-none" />
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 class="card-title uppercase">product name</h2>
+               
+              </div>
+            </div>
+             <!-- card-8 -->
+
+           </div>
+           <!-- item -->
+        </section>
+         <!-- Trending Item -->

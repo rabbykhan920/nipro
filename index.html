@@ -279,26 +279,116 @@
           
         </section>
         <!-- About Us -->
-         <!-- Trending Item -->
-         <section class="md:my-16 my-8">
-             <!-- heading  -->
-             <div class="text-center md:mb-20 mb-10">
-             
-               <h2 class="lg:text-4xl md:text-2xl text-xl md:mt-6 mt-3">Trending Item</h2>
-               <hr class="border-[#F7941D] border-2 w-16 sm:w-32 md:w-24 lg:w-36 mx-auto my-4"> 
+       <!-- Trending Item -->
+<section class="md:my-16 my-8">
+  <!-- heading  -->
+  <div class="text-center md:mb-20 mb-10">
+    <h2 class="lg:text-4xl md:text-2xl text-xl md:mt-6 mt-3">Trending Item</h2>
+    <hr class="border-[#F7941D] border-2 w-16 sm:w-32 md:w-24 lg:w-36 mx-auto my-4" />
 
-              <div class="flex-wrap">
-                <a href="#" class="btn md:mr-4 bg-transparent border-none shadow-none hover:bg-[#F7941D] hover:text-white text-lg">All</a>
-                <a href="#" class="btn md:mr-4 bg-transparent border-none shadow-none hover:bg-[#F7941D] hover:text-white text-lg">APP DESIGN</a>
-                <a href="#" class="btn md:mr-4 bg-transparent border-none shadow-none hover:bg-[#F7941D] hover:text-white text-lg">WEB DESIGN</a>
-                <a href="#" class="btn md:mr-4 bg-transparent border-none shadow-none hover:bg-[#F7941D] hover:text-white text-lg">UI DESIGN</a>
-                <a href="#" class="btn md:mr-4 bg-transparent border-none shadow-none hover:bg-[#F7941D] hover:text-white text-lg">PHOTOSHOP</a>
-              </div>
-          </div>
+    <!-- Filter Buttons -->
+    <div class="flex flex-wrap justify-center gap-2">
+      <button onclick="filterItems('all')" class="filter-btn btn bg-transparent border-none shadow-none hover:bg-[#F7941D] hover:text-white text-lg">All</button>
+      <button onclick="filterItems('app')" class="filter-btn btn bg-transparent border-none shadow-none hover:bg-[#F7941D] hover:text-white text-lg">APP DESIGN</button>
+      <button onclick="filterItems('web')" class="filter-btn btn bg-transparent border-none shadow-none hover:bg-[#F7941D] hover:text-white text-lg">WEB DESIGN</button>
+      <button onclick="filterItems('ui')" class="filter-btn btn bg-transparent border-none shadow-none hover:bg-[#F7941D] hover:text-white text-lg">UI DESIGN</button>
+      <button onclick="filterItems('photoshop')" class="filter-btn btn bg-transparent border-none shadow-none hover:bg-[#F7941D] hover:text-white text-lg">PHOTOSHOP</button>
+    </div>
+  </div>
+
+  <!-- item cards -->
+  <div id="itemContainer" class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:gap-8 gap-4">
+    <!-- Example Card -->
+    <div class="card border rounded-none hover:bg-[#E5E5E5]" data-category="app">
+      <figure class="px-6"><img src="https://joysultan.github.io/nipro/images/img-1.jpg" alt="Shoes" /></figure>
+      <div class="card-body items-center text-center">
+        <h2 class="card-title uppercase">App Design</h2>
+      </div>
+    </div>
+    <div class="card border rounded-none hover:bg-[#E5E5E5]" data-category="web">
+      <figure class="px-6"><img src="https://joysultan.github.io/nipro/images/img-2.jpg" alt="Shoes" /></figure>
+      <div class="card-body items-center text-center">
+        <h2 class="card-title uppercase">Web Design</h2>
+      </div>
+    </div>
+    <div class="card border rounded-none hover:bg-[#E5E5E5]" data-category="ui">
+      <figure class="px-6"><img src="https://joysultan.github.io/nipro/images/img-3.jpg" alt="Shoes" /></figure>
+      <div class="card-body items-center text-center">
+        <h2 class="card-title uppercase">UI Design</h2>
+      </div>
+    </div>
+    <div class="card border rounded-none hover:bg-[#E5E5E5]" data-category="photoshop">
+      <figure class="px-6"><img src="https://joysultan.github.io/nipro/images/img-4.jpg" alt="Shoes" /></figure>
+      <div class="card-body items-center text-center">
+        <h2 class="card-title uppercase">Photoshop</h2>
+      </div>
+    </div>
+    <div class="card border rounded-none hover:bg-[#E5E5E5]" data-category="app">
+      <figure class="px-6"><img src="https://joysultan.github.io/nipro/images/img-5.jpg" alt="Shoes" /></figure>
+      <div class="card-body items-center text-center">
+        <h2 class="card-title uppercase">App Design</h2>
+      </div>
+    </div>
+    <div class="card border rounded-none hover:bg-[#E5E5E5]" data-category="web">
+      <figure class="px-6"><img src="https://joysultan.github.io/nipro/images/img-6.jpg" alt="Shoes" /></figure>
+      <div class="card-body items-center text-center">
+        <h2 class="card-title uppercase">Web Design</h2>
+      </div>
+    </div>
+    <div class="card border rounded-none hover:bg-[#E5E5E5]" data-category="ui">
+      <figure class="px-6"><img src="https://joysultan.github.io/nipro/images/product_img_5.jpg" alt="Shoes" /></figure>
+      <div class="card-body items-center text-center">
+        <h2 class="card-title uppercase">UI Design</h2>
+      </div>
+    </div>
+    <div class="card border rounded-none hover:bg-[#E5E5E5]" data-category="photoshop">
+      <figure class="px-6"><img src="https://joysultan.github.io/nipro/images/product_img_2.jpg" alt="Shoes" /></figure>
+      <div class="card-body items-center text-center">
+        <h2 class="card-title uppercase">Photoshop</h2>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- JS for filtering -->
+<script>
+  function filterItems(category) {
+    const items = Array.from(document.querySelectorAll('#itemContainer .card'));
+
+    // Show all if "all" selected
+    if (category === 'all') {
+      items.forEach(item => item.classList.remove('hidden'));
+      return;
+    }
+
+    const filtered = items.filter(item => item.dataset.category === category);
+    
+    // Shuffle and show only 2-3 items
+    const shuffled = filtered.sort(() => 0.5 - Math.random()).slice(0, Math.floor(Math.random() * 2) + 2);
+
+    items.forEach(item => item.classList.add('hidden'));
+    shuffled.forEach(item => item.classList.remove('hidden'));
+  }
+
+  // Load all items initially
+  window.addEventListener('DOMContentLoaded', () => filterItems('all'));
+</script>
+       <!-- Trending Item -->
+        <!-- why choose nipro -->
+        <section class="">
           <!-- heading  -->
-           
+          <div class="text-center md:mb-20 mb-10">
+            <span class="md:text-5xl text-3xl font-semibold my-6">|</span>
+             <h2 class="lg:text-4xl md:text-2xl text-xl md:mt-6 mt-3">WHY CHOOSE NIPRO</h2>
+             
+        </div>
+        <!-- heading  -->
+
+
+
+          
         </section>
-         <!-- Trending Item -->
+        <!-- why choose nipro -->
      </main>
      <!-- main end -->
 </body>
