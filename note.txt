@@ -134,3 +134,80 @@
            <!-- item -->
         </section>
          <!-- Trending Item -->
+
+
+
+          <!-- WHO WORKS WITH US -->
+         <section class="lg:my-24 md:my-16 my-8" style="background-image: url(https://joysultan.github.io/nipro/images/BG.jpg);">
+            <!-- heading  -->
+          <div class="text-center mb-12">
+            <span class="md:text-5xl text-3xl font-semibold my-6">|</span>
+             <h2 class="lg:text-4xl md:text-2xl text-xl md:mt-6 mt-3">WHO WORKS WITH US</h2>
+             
+        </div>
+        <!-- heading  -->
+          <!--items  -->
+          <div class="text-center">
+          <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 md:gap-8 gap-4 pb-10">
+             <!-- card-1 -->
+             <div class="card card-compact bg-base-100 shadow-xl rounded-xl">
+              <figure>
+                <img class="w-full"
+                  src="https://joysultan.github.io/nipro/images/photo-1.jpg"
+                  alt="person" />
+              </figure>
+              <div class="card-body">
+                <h2 class="card-title">Ashiful Haque Pappu</h2>
+                <p>UI/UX Designer</p>
+               
+              </div>
+            </div>
+             <!-- card-1 -->
+             <!-- card-2 -->
+             <div class="card card-compact bg-base-100 shadow-xl rounded-xl">
+              <figure>
+                <img class="w-full"
+                  src="https://joysultan.github.io/nipro/images/photo-1.jpg"
+                  alt="person" />
+              </figure>
+              <div class="card-body">
+                <h2 class="card-title">Ashiful Haque Pappu</h2>
+                <p>UI/UX Designer</p>
+               
+              </div>
+            </div>
+             <!-- card-2 -->
+             <!-- card-3 -->
+             <div class="card card-compact bg-base-100 shadow-xl rounded-xl">
+              <figure>
+                <img class="w-full"
+                  src="https://joysultan.github.io/nipro/images/photo-1.jpg"
+                  alt="person" />
+              </figure>
+              <div class="card-body">
+                <h2 class="card-title">Ashiful Haque Pappu</h2>
+                <p>UI/UX Designer</p>
+               
+              </div>
+            </div>
+             <!-- card-3 -->
+             <!-- card-4 -->
+             <div class="card card-compact bg-base-100 shadow-xl rounded-xl">
+              <figure>
+                <img class="w-full"
+                  src="https://joysultan.github.io/nipro/images/photo-1.jpg"
+                  alt="person" />
+              </figure>
+              <div class="card-body">
+                <h2 class="card-title">Ashiful Haque Pappu</h2>
+                <p>UI/UX Designer</p>
+               
+              </div>
+            </div>
+             <!-- card-4 -->
+          </div>
+          
+        </div>
+          <!--items  -->
+        </section>
+         <!-- WHO WORKS WITH US -->
